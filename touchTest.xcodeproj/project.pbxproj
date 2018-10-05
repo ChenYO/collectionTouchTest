@@ -12,9 +12,13 @@
 		76FB59F02164610D001FBE51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FB59EE2164610D001FBE51 /* Main.storyboard */; };
 		76FB59F221646112001FBE51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FB59F121646112001FBE51 /* Assets.xcassets */; };
 		76FB59F521646112001FBE51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FB59F321646112001FBE51 /* LaunchScreen.storyboard */; };
+		76FB59FF2166EADA001FBE51 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB59FE2166EADA001FBE51 /* CustomCollectionViewCell.swift */; };
+		E660C26389CECBF75F80CCB0 /* Pods_touchTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DF76122D4DFFC01B170029 /* Pods_touchTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B2DC51C5DAB0642FBA7D78A /* Pods-touchTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-touchTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-touchTest/Pods-touchTest.release.xcconfig"; sourceTree = "<group>"; };
+		60C7A2C89BFACF7A8AD7AA88 /* Pods-touchTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-touchTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-touchTest/Pods-touchTest.debug.xcconfig"; sourceTree = "<group>"; };
 		76FB59E72164610D001FBE51 /* touchTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = touchTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FB59EA2164610D001FBE51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76FB59EC2164610D001FBE51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		76FB59F121646112001FBE51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76FB59F421646112001FBE51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76FB59F621646112001FBE51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76FB59FE2166EADA001FBE51 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		F5DF76122D4DFFC01B170029 /* Pods_touchTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_touchTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E660C26389CECBF75F80CCB0 /* Pods_touchTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F35A81A03F7542285CFAD76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60C7A2C89BFACF7A8AD7AA88 /* Pods-touchTest.debug.xcconfig */,
+				5B2DC51C5DAB0642FBA7D78A /* Pods-touchTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		76FB59DE2164610D001FBE51 = {
 			isa = PBXGroup;
 			children = (
 				76FB59E92164610D001FBE51 /* touchTest */,
 				76FB59E82164610D001FBE51 /* Products */,
+				3F35A81A03F7542285CFAD76 /* Pods */,
+				DF3DB463417FC690A9A722D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +78,17 @@
 				76FB59F121646112001FBE51 /* Assets.xcassets */,
 				76FB59F321646112001FBE51 /* LaunchScreen.storyboard */,
 				76FB59F621646112001FBE51 /* Info.plist */,
+				76FB59FE2166EADA001FBE51 /* CustomCollectionViewCell.swift */,
 			);
 			path = touchTest;
+			sourceTree = "<group>";
+		};
+		DF3DB463417FC690A9A722D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5DF76122D4DFFC01B170029 /* Pods_touchTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76FB59F921646113001FBE51 /* Build configuration list for PBXNativeTarget "touchTest" */;
 			buildPhases = (
+				27C8F43896C260C94B763055 /* [CP] Check Pods Manifest.lock */,
 				76FB59E32164610D001FBE51 /* Sources */,
 				76FB59E42164610D001FBE51 /* Frameworks */,
 				76FB59E52164610D001FBE51 /* Resources */,
+				793A19556931ADB95025CAE0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +159,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27C8F43896C260C94B763055 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-touchTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		793A19556931ADB95025CAE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-touchTest/Pods-touchTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/YNDropDownMenu/YNDropDownMenu.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YNDropDownMenu.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-touchTest/Pods-touchTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		76FB59E32164610D001FBE51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				76FB59ED2164610D001FBE51 /* ViewController.swift in Sources */,
+				76FB59FF2166EADA001FBE51 /* CustomCollectionViewCell.swift in Sources */,
 				76FB59EB2164610D001FBE51 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +347,7 @@
 		};
 		76FB59FA21646113001FBE51 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60C7A2C89BFACF7A8AD7AA88 /* Pods-touchTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +366,7 @@
 		};
 		76FB59FB21646113001FBE51 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B2DC51C5DAB0642FBA7D78A /* Pods-touchTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
